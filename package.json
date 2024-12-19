@@ -1,0 +1,38 @@
+{
+  "name": "fastify-sequelize-template",
+  "version": "1.0.0",
+  "description": "Fastify Sequelize Template",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "tsx --test",
+    "update:snapshots": "SAVE_SNAPSHOTS=1 npm run test",
+    "start": "tsx --env-file=.env src/index.ts",
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "type-check": "tsc --noEmit",
+    "lint": "npx eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/env": "^5.0.1",
+    "@fastify/swagger": "^9.4.0",
+    "@fastify/swagger-ui": "^5.2.0",
+    "fastify": "^5.2.0",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "@tsconfig/recommended": "^1.0.8",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.17.0",
+    "json-schema-to-ts": "^3.1.1",
+    "snapshot-assertion": "^5.0.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}
